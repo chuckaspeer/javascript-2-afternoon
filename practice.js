@@ -15,6 +15,11 @@
 */
 
 //Code here
+var me ={
+  name : "Brian",
+  age : 45
+}
+alert(me.name)
 
 
 
@@ -26,6 +31,16 @@
 */
 
 //Code here
+var favoriteThings = {
+  band: "Miss Jane",
+  food: "Cheeseburger",
+  person: "Chrsti",
+  book: " Dr. Suess",
+  movie: "Transformers",
+  holiday: "Christmas" 
+
+}
+
 
 
 
@@ -34,37 +49,46 @@
 */
 
 //Code here
+favoriteThings.car = "Dodge Ram 1500";
+favoriteThings.brand = "Adidas";
+
+
+// /*
+//   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
+// */
+
+// //Code here
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter"
 
 
 
-/*
-  Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
-*/
+// ////////// PROBLEM 3 //////////
 
-//Code here
+// /* 
+//   Create an empty Object called backPack. 
+//   Now, create a variable called 'item' and set it equal to the string 'firstPocket'. 
+//   Using bracket notation, add a 'firstPocket' key (or property) to backPack, using 'item'.
+//   Set the value of that key to 'chapstick'.
+//   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
+// */
 
+// //Code here
+var backPack = {
 
+}
 
-////////// PROBLEM 3 //////////
-
-/* 
-  Create an empty Object called backPack. 
-  Now, create a variable called 'item' and set it equal to the string 'firstPocket'. 
-  Using bracket notation, add a 'firstPocket' key (or property) to backPack, using 'item'.
-  Set the value of that key to 'chapstick'.
-  Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
-*/
-
-//Code here
-
-
+var item = "firstPocket";
+backPack = ['firstPocket']
+backPack.firstPocket = "chapstick";
+backPack.color = "Black";
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+alert(backPack);
 
 
 /*
@@ -79,7 +103,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 ////////// PROBLEM 4 //////////
 
-// Do not edit the code below.
+//Do not edit the code below.
 var user2 = {
   name: 'Ty',
   age: 24,
@@ -97,7 +121,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -109,7 +134,9 @@ var user2 = {
 */
 
 //Code Here
+var methodCollection = {
 
+}
 
 
 /*
@@ -118,13 +145,19 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello = function alertHello(){
+alert("hello");
+}
+methodCollection.logHello = function logHello(){
+console.log("hello");
 
-
+}
 
 /*
   Now call your alertHello and logHello methods.
 */
-
+alertHello();
+logHello();
 //Code Here
 
 
@@ -137,6 +170,13 @@ var user2 = {
 */
 
 //Code Here
+function makePerson (name, birthday, ssn){
+return {
+  name, 
+  birthday, 
+  ssn
+}
+}
 
 
 
@@ -148,5 +188,13 @@ var user2 = {
 */
 
 //Code Here
+function makeCard (cardNumber, expirationDate, securityCode){
+  return {
+    cardNumber, 
+    expirationDate, 
+    securityCode
+  }
+
+}
 
 
